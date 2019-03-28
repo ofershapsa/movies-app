@@ -4,11 +4,9 @@ export class MovieEditor extends React.Component {
   state = {
     movie: {}
   }
-
   componentDidMount() {
     this.setState({ movie: { ...this.props.movie } })
   }
-
   handleFieldChange = fieldName => event => {
     const movie = { ...this.state.movie }
     movie[fieldName] = event.target.value
@@ -22,10 +20,12 @@ export class MovieEditor extends React.Component {
       <div>
         <h2 className="title">Edit movie details</h2>
         <div className="field">
-          <label htmlFor="" className="label">
+          <label htmlFor="" className="label" >
             Title
           </label>
-          <div className="control">
+          <div className="control" >
+            <div>
+            </div>
             <input
               className="input"
               type="text"
@@ -33,7 +33,9 @@ export class MovieEditor extends React.Component {
               value={movie.title}
               onChange={this.handleFieldChange("title")}
             />
+
           </div>
+
         </div>
         <div className="field">
           <label htmlFor="" className="label">

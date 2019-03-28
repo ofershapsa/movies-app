@@ -12,6 +12,7 @@ export class MoviesOverview extends React.Component {
     movieToDelete: null,
     movieToEdit: null,
     editedMovie: null
+
   }
 
   async componentDidMount() {
@@ -20,7 +21,7 @@ export class MoviesOverview extends React.Component {
     this.setState({
       movies,
       count,
-      movieToEdit: movies[0] // TODO: Remove
+
     })
   }
 
@@ -68,6 +69,7 @@ export class MoviesOverview extends React.Component {
   }
 
   saveMovie = () => {
+
     const id = this.state.editedMovie.id
     const { title, director, runtime, genre, year } = this.state.editedMovie
     const movie = this.getMovieById(id)
@@ -89,11 +91,12 @@ export class MoviesOverview extends React.Component {
   }
 
   render() {
-    const { movieToDelete, movieToEdit } = this.state
+    const { movieToDelete, movieToEdit, } = this.state
 
     return (
       <div className="container">
         <h1 className="title">Herolo Movies</h1>
+
         <div>
           <button className="button is-info" onClick={this.handleAdd}>
             Add
@@ -129,7 +132,7 @@ export class MoviesOverview extends React.Component {
                 </button>
               </footer>
             </div>
-            <button className="modal-close is-large" aria-label="close" />
+            <button className="modal-close is-large" aria-label="close" onClick={this.resetMovieToDelete} />
           </div>
         )}
         {movieToEdit && (
@@ -144,6 +147,7 @@ export class MoviesOverview extends React.Component {
               </section>
               <footer className="modal-card-foot">
                 <button className="button is-success" onClick={this.saveMovie}>
+
                   Save changes
                 </button>
                 <button className="button" onClick={this.resetMovieToEdit}>
@@ -151,9 +155,12 @@ export class MoviesOverview extends React.Component {
                 </button>
               </footer>
             </div>
-            <button className="modal-close is-large" aria-label="close" />
+            <button className="modal-close is-large" aria-label="close" onClick={this.resetMovieToEdit} />
           </div>
         )}
+
+
+
       </div>
     )
   }

@@ -10,10 +10,18 @@ export class Movie {
   }
 
   niceTitle() {
+
     const clean = this.title.replace(/[^A-Za-z0-9 .]/g, "")
     const low = clean.toLowerCase().trim()
-    const nice = low.charAt(0).toUpperCase() + low.slice(1)
+    const nice = this.toTitleCase(low)
+
     console.log({ title: this.title, clean, low, nice })
     return nice
+  }
+
+  toTitleCase(str) {
+    return str.replace(/\w\S*/g, function (txt) {
+      return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+    });
   }
 }

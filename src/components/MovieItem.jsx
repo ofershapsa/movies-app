@@ -28,6 +28,7 @@ export class MovieItem extends React.Component {
             <div className="media-content">
               <div className="title is-4">{movie.niceTitle()}</div>
               <div className="subtitle is-6">{movie.director}</div>
+              <div className="subtitle is-6">{movie.year}</div>
             </div>
           </div>
           <div className="card-footer">
