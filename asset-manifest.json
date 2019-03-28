@@ -1,13 +1,13 @@
 {
-  "main.css": "/TD-React-Challenge-Test-1/static/css/main.66c7e387.chunk.css",
-  "main.js": "/TD-React-Challenge-Test-1/static/js/main.86b2f650.chunk.js",
-  "main.js.map": "/TD-React-Challenge-Test-1/static/js/main.86b2f650.chunk.js.map",
-  "runtime~main.js": "/TD-React-Challenge-Test-1/static/js/runtime~main.5357ad34.js",
-  "runtime~main.js.map": "/TD-React-Challenge-Test-1/static/js/runtime~main.5357ad34.js.map",
-  "static/js/2.96fef181.chunk.js": "/TD-React-Challenge-Test-1/static/js/2.96fef181.chunk.js",
-  "static/js/2.96fef181.chunk.js.map": "/TD-React-Challenge-Test-1/static/js/2.96fef181.chunk.js.map",
-  "index.html": "/TD-React-Challenge-Test-1/index.html",
-  "precache-manifest.2329df258c625b8bd3c3d2dba820807c.js": "/TD-React-Challenge-Test-1/precache-manifest.2329df258c625b8bd3c3d2dba820807c.js",
-  "service-worker.js": "/TD-React-Challenge-Test-1/service-worker.js",
-  "static/css/main.66c7e387.chunk.css.map": "/TD-React-Challenge-Test-1/static/css/main.66c7e387.chunk.css.map"
+  "main.css": "/movies-app/static/css/main.66c7e387.chunk.css",
+  "main.js": "/movies-app/static/js/main.aa980107.chunk.js",
+  "main.js.map": "/movies-app/static/js/main.aa980107.chunk.js.map",
+  "runtime~main.js": "/movies-app/static/js/runtime~main.41022d0a.js",
+  "runtime~main.js.map": "/movies-app/static/js/runtime~main.41022d0a.js.map",
+  "static/js/2.96fef181.chunk.js": "/movies-app/static/js/2.96fef181.chunk.js",
+  "static/js/2.96fef181.chunk.js.map": "/movies-app/static/js/2.96fef181.chunk.js.map",
+  "index.html": "/movies-app/index.html",
+  "precache-manifest.7bec38217414827eca7a17cb8a39d752.js": "/movies-app/precache-manifest.7bec38217414827eca7a17cb8a39d752.js",
+  "service-worker.js": "/movies-app/service-worker.js",
+  "static/css/main.66c7e387.chunk.css.map": "/movies-app/static/css/main.66c7e387.chunk.css.map"
 }
